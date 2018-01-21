@@ -31,7 +31,12 @@ function routeConfig($routeProvider) {
 		.when('/services/list', {
 			templateUrl: 'services-list.html',
 			controller: 'ServicesController',
-			controllerAs: 'servicesCtrl'
+			controllerAs: 'servicesCtrl',
+			resolve: {
+				services: function ($http) {
+					return $http.get('/computer/assets/services.json');
+				}
+			}
 		})
 		.when('/contact', {
 			templateUrl: 'contact.html',
@@ -59,11 +64,33 @@ function aboutCtrl() {
 }
 
 app.controller('ServicesController', servicesCtrl);
-function servicesCtrl() {
+function servicesCtrl(services) {
 	var vm = this;
+	services.success(function (rsp) {
+		console.log("success get json!");
+		vm.services = rsp.data;
+	});
 }
 
 app.controller('ContactController', contactCtrl);
 function contactCtrl() {
 	var vm = this;
+}
+
+app.factory('servicesList', servicesList);
+function servicesList($http) {
+	return {
+		list: function () {
+			return $http.get('/assets/services.json').then(function (rsp) {
+				return rsp.data;
+			}, function (err) {
+				console.log("http get /assets/services.json failed!");
+			});
+		}
+	}
+}
+
+function getServiceList(serviceList) {
+	console.log("getServiceList");
+	return serviceList.list();
 }

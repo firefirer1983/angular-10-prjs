@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row" ng-repeat="service in servicesCtrl.services">
+    <div class="col-md-2">
+      <img ng-src="{{service.imageUrl}}" alt="" class="img-responsive">
+    </div>
+    <div class="col-md-10">
+      <h2>{{service.name}}</h2>
+      <p>{{service.description}}</p>
+      <a href="#!/contact" class="btn btn-lg btn-primary">Contact Us</a>
+    </div>
+  </div>
+</div>

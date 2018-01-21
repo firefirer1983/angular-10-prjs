@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "id": "0",
+      "name": "Hardware Repair",
+      "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+      "imageUrl": "/images/computer.png"
+    },
+    {
+      "id": "1",
+      "name": "Virus Remove",
+      "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+      "imageUrl": "/images/computer.png"
+    },
+    {
+      "id": "2",
+      "name": "System Tuneup",
+      "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui."
+      "imageUrl": "/images/computer.png"
+    }
+  ]
+}
