@@ -18,21 +18,29 @@
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script src="../bower_components/angular-route/angular-route.min.js"></script>
   <script src="app.js"></script>
+  <style>
+    .navbar-default {
+      background-color: transparent;
+      border: transparent;
+    }
+    .form-inline {
+      padding-top: 7px;
+    }
+  </style>
 </head>
 
 <body ng-app="computerApp">
 <div ng-controller="computerController as computerCtrl">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-default fixed-top">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">NavBrand</a>
-      <button class="navbar-toggler" type="button" ng-click="computerCtrl.collapse = !computerCtrl.collapse">
+      <button class="btn btn-default navbar-toggle" ng-click="computerCtrl.collapse = !computerCtrl.collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
     </div>
-
-    <div class="collapse navbar-collapse" uib-collapse="computerCtrl.collapse">
+    <div class="navbar-collapse collapse" uib-collapse="computerCtrl.collapse">
       <ul class="nav navbar-nav">
         <li>
           <a href="#">Home <span class="sr-only">(current)</span></a>
@@ -51,8 +59,9 @@
             <li><a href="#">Something else here</a></li>
           </ul>
         </li>
+
       </ul>
-      <form class="form-inline my-2 my-lg-0 navbar-right">
+      <form class="form-inline navbar-right">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>

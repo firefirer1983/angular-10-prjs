@@ -1,6 +1,8 @@
-var app = angular.module('computerApp');
-var computerCtrl = function () {
-	var vm = this;
-};
+var app = angular.module('computerApp',  ['ui.bootstrap', 'ngSanitize', 'ngAnimate']);
+
 app.controller('computerController', computerCtrl);
+function computerCtrl() {
+  var vm = this;
+  vm.collapse = true;
+}
 
