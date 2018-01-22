@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0",
+    "city": "shenzhen",
+    "province": "guangdong",
+    "country": "china"
+  },
+  {
+    "id": "0",
+    "city": "chengdu",
+    "province": "sichuan",
+    "country": "china"  },
+  {
+    "id": "0",
+    "city": "xiamen",
+    "province": "fujian",
+    "country": "china"  }
+]

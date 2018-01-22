@@ -4,6 +4,11 @@
     <div class="col-md-12">
       <h2>Contact</h2>
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <ul ng-repeat="location in contactCtrl.locations">
+        <li >{{location.country}}</li>
+        <li >{{location.province}}</li>
+        <li >{{location.city}}</li>
+      </ul>
       <p><a class="btn btn-secondary" href="#" role="button">Go Back &nbsp;&laquo;</a></p>
     </div>
   </div>

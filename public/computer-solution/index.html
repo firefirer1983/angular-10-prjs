@@ -16,8 +16,11 @@
   <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="app.js"></script>
+  <script src="index.route.js"></script>
+  <script src="services.js"></script>
+  <script src="controllers.js"></script>
   <style>
     .navbar-default {
       background-color: transparent;
@@ -70,7 +73,7 @@
     </div>
   </nav>
   <main role="main">
-    <div ng-view>
+    <div ui-view>
 
     </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
